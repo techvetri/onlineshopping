@@ -1,0 +1,120 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.root{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    height: 70px;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-logo img{
+    height: 45px;
+    width: 45px;
+    border-radius: 22.5px;
+}
+
+.navbar .nav-menus{
+    display: flex;
+    align-items: center;
+}
+.navbar .nav-menus ul{
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.navbar .nav-menus ul li {
+    display: inline-block;
+    padding: 7px;
+    background-color: white;
+    transition: background-color 1s;
+    width: 60px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar .nav-menus ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.navbar .nav-menus ul li a:hover{
+    color: white;
+    transition: color 1s;
+}
+
+.navbar .nav-menus ul li:hover{
+    background-color: rgba(0,0,255,0.3);
+}
+
+.navbar .search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input{
+    height: 34px;
+    width: 280px;
+    border: 0;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.search-bar button{
+    height: 36px;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    border: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.content-products {
+    height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
+}
+
+.product{
+    height: 300px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.3);
+    margin: 10px;
+    transition: box-shadow 0.5s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product:hover{
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.3);
+}
+
+.product-img img{
+    width: 250px;
+    height: 200px;
+}
+.product-details p{
+    font-size: 20px;
+}
